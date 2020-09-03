@@ -13,7 +13,7 @@
 
   <Target Name="Package" AfterTargets="Build;Publish">
     <ZipDirectory
-      SourceDirectory="$(OutputPath)"
+      SourceDirectory="$(OutputPath)" 
       DestinationFile="$(MSBuildProjectDirectory)/deploy.zip"
       Overwrite="true" />
   </Target>  
